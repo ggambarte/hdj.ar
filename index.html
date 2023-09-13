@@ -145,37 +145,39 @@
 
         <main>
             <section
-            id="inicio"
-            class="container-fluid text-center d-flex justify-content-center align-items-center"
-            style="
-                background-image: url('./assets/images/fondo.png');
-                background-size: cover;
-                background-position: center;
-                height: 700px;
-            "
-        >
-            <div class="row">
-                <div class="col-md-6 p-lg-5 mx-auto mb-5">
-                    <h1 class="display-6 text-muted m-0">
-                        Si sos distribuidor de Hierbas del Jardín, te brindamos la oportunidad de crear
-                        <span class="fw-semibold text-danger text-opacity-75">tu propio catálogo personalizado</span>, una
-                        herramienta que te ayudará a impulsar tus ventas de manera
-                        efectiva y sin complicaciones.
-                    </h1>
-                    <p class="fw-light mb-3 fs-3 mt-3">
-                        ¡Descubre cómo podemos facilitarte el camino hacia el
-                        crecimiento de tu negocio!
-                    </p>
+                id="inicio"
+                class="container-fluid text-center d-flex justify-content-center align-items-center"
+                style="
+                    background-image: url('./assets/images/fondo.png');
+                    background-size: cover;
+                    background-position: center;
+                    height: 700px;
+                "
+            >
+                <div class="row">
+                    <div class="col-md-6 p-lg-5 mx-auto mb-5">
+                        <h1 class="display-6 text-muted m-0">
+                            Si sos distribuidor de Hierbas del Jardín, te
+                            brindamos la oportunidad de crear
+                            <span
+                                class="fw-semibold text-danger text-opacity-75"
+                                >tu propio catálogo personalizado</span
+                            >, una herramienta que te ayudará a impulsar tus
+                            ventas de manera efectiva y sin complicaciones.
+                        </h1>
+                        <p class="fw-light mb-3 fs-3 mt-3">
+                            ¡Descubre cómo podemos facilitarte el camino hacia
+                            el crecimiento de tu negocio!
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        
+            </section>
 
             <!-- ¿COMO FUNCIONA? -->
             <section
                 id="como-funciona"
                 class="container position-relative overflow-hidden text-center mb-5"
-                style="max-width: 1000px;"
+                style="max-width: 1000px"
             >
                 <div
                     class="col-md-12 mx-auto mb-5 element"
@@ -191,7 +193,7 @@
                     </h2>
                 </div>
 
-                <div class="container mb-5" >
+                <div class="container mb-5">
                     <div
                         class="row align-items-center element"
                         data-scroll="fade-in"
@@ -448,26 +450,26 @@
             </div>
         </footer>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"
-        ></script>
+        <script>
+            src =
+                "https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js";
+            integrity =
+                "sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm";
+            crossorigin = "anonymous";
+
+            const elements = document.querySelectorAll(".element");
+            const windowHeight = window.innerHeight;
+
+            function checkElements() {
+                elements.forEach((element) => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    if (elementTop < windowHeight) {
+                        element.classList.add("fade-in");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkElements);
+        </script>
     </body>
 </html>
-
-<script>
-    const elements = document.querySelectorAll(".element");
-    const windowHeight = window.innerHeight;
-
-    function checkElements() {
-        elements.forEach((element) => {
-            const elementTop = element.getBoundingClientRect().top;
-            if (elementTop < windowHeight) {
-                element.classList.add("fade-in");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", checkElements);
-</script>
