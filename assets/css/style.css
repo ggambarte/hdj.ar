@@ -1,0 +1,12 @@
+
+.element {
+    opacity: 0;
+    transform: translateY(450px);
+    transition: opacity 0.5s ease, transform 1.5s ease;
+}
+
+/* Definición de animación para aparecer cuando se desplaza hacia abajo */
+.element.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
