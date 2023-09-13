@@ -154,7 +154,7 @@
                     height: 700px;
                 "
             >
-                <div class="row">
+                <div class="row fade-in1">
                     <div class="col-md-6 p-lg-5 mx-auto mb-5">
                         <h1 class="display-6 text-muted m-0">
                             Si sos distribuidor de Hierbas del Jardín, te
@@ -373,7 +373,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container text-center my-5">
+                <div id="resizeButton" class="container text-center my-5">
                     <div class="row-cols-lg-2">
                         <a
                             href="https://api.whatsapp.com/send?phone=5493812498250&text=Hola%20estoy%20interesado%20en%20un%20Cat%C3%A1logo%20para%20mi%20Emprendimiento!"
@@ -458,20 +458,7 @@
             crossorigin="anonymous"
             ;
         ></script>
-        <script>
-            const elements = document.querySelectorAll(".element");
-            const windowHeight = window.innerHeight;
 
-            function checkElements() {
-                elements.forEach((element) => {
-                    const elementTop = element.getBoundingClientRect().top;
-                    if (elementTop < windowHeight) {
-                        element.classList.add("fade-in");
-                    }
-                });
-            }
-
-            window.addEventListener("scroll", checkElements);
-        </script>
+        <script src="/assets/js/script.js"></script>
     </body>
 </html>

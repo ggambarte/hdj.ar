@@ -1,12 +1,41 @@
-
+/* Animacion para mostrar todos los elementos */
 .element {
     opacity: 0;
-    transform: translateY(450px);
-    transition: opacity 0.5s ease, transform 1.5s ease;
+    transform: translateY(250px);
+    transition: opacity 0.5s ease, transform 2s ease;
 }
 
-/* Definición de animación para aparecer cuando se desplaza hacia abajo */
 .element.fade-in {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+/* boton de llamado a la accion */
+
+#resizeButton {
+    transition: all 2s ease-in-out;
+}
+
+#resizeButton.active {
+    transform: scale(1.01);
+}
+
+
+/* Animacion del texto de arriba */
+.fade-in1 {
+    animation: fadeIn 2s ease forwards;
+    opacity: 0;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
