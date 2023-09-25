@@ -12,11 +12,10 @@ function checkElements() {
 
 window.addEventListener("scroll", checkElements);
 
-
-const resizeButton = document.getElementById('resizeButton');
+const resizeButton = document.getElementById("resizeButton");
 
 function toggleSize() {
-    resizeButton.classList.toggle('active');
+    resizeButton.classList.toggle("active");
 }
 
 setInterval(toggleSize, 1000); // Cambia el tamaño cada 1000 ms (1 segundo)
